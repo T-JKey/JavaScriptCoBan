@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="./fonts/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxy/1.6.1/scripts/jquery.ajaxy.min.js
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thực hành JavaScript</title>
+  <link rel="stylesheet" href="./main.css">
+    <script src="./base.js" defer></script>
+</head>
+<body>
+  <div>
+    <!-- Tab items -->
+    <div class="tabs">
+      <div class="tab-item active">
+        <i class="tab-icon fas fa-code"></i>
+        React
+      </div>
+      <div class="tab-item">
+        <i class="tab-icon fas fa-cog"></i>
+        Angular
+      </div>
+      <div class="tab-item">
+        <i class="tab-icon fas fa-plus-circle"></i>
+        Ember
+      </div>
+      <div class="tab-item">
+        <i class="tab-icon fas fa-pen-nib"></i>
+        Vue.JS
+      </div>
+      <div class="line"></div>
+    </div>
+  
+    <!-- Tab content -->
+    <div class="tab-content">
+      <div class="tab-pane active">
+        <h2>React</h2>
+        <p>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.</p>
+      </div>
+      <div class="tab-pane">
+        <h2>Angular</h2>
+        <p>Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps.</p>
+      </div>
+      <div class="tab-pane">
+        <h2>Ember</h2>
+        <p>Ember.js is a productive, battle-tested JavaScript framework for building modern web applications. It includes everything you need to build rich UIs that work on any device.</p>
+      </div>
+      <div class="tab-pane">
+        <h2>Vue.js</h2>
+        <p>Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bài 2 đồng hồ bấm giờ -->
+  <div class="wrapper">
+    <h1>Đồng hồ bấm giờ</h1>
+    <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+    <button id="button-start">Start</button>
+    <button id="button-stop">Stop</button>
+    <button id="button-reset">Reset</button>
+  </div> 
+
+  <!-- Bài 3 đồng hồ -->
+  <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+
+  <!-- Bài 4 API thời tiết-->
+
+  <div class="containers">
+    <div id="weather">
+      <input type="text" class="search">
+      <div class="content">
+        <h1 class="capital">
+          <span class="city">Ha Noi</span>
+          <span>,</span>
+          <span class="country">VN</span>
+        </h1>
+  
+        <div class="time">17/04/2023, 9:00:24 PM</div>
+        <div class="temperature">
+          <span class="value">23 <sup>o</sup>C</span>
+        </div>
+  
+        <div class="short-desc">Clouds</div>
+        <div class="more-desc">
+          <div class="visibility">
+            <i class="fa-solid fa-eye"></i>
+            <span>1000s</span>
+          </div>
+          <div class="wind">
+            <i class="fa-solid fa-wind"></i>
+            <span>1000s</span>
+          </div>
+          <div class="clound-sun">
+            <i class="fa-solid fa-cloud-sun"></i>
+            <span>1000s</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
